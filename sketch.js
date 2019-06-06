@@ -42,7 +42,7 @@ function setup() {
     video.hide();
     
     // make a button to toggle the sound
-    button = createButton('Click to toggle sound');
+    button = createButton('Click to toggle sound on/off');
     button.position(19, 100);
     button.hide()
     button.mousePressed(toggleSound);
@@ -72,7 +72,7 @@ function setup() {
 
 // this is what heppens once the model is loaded
 function modelReady() {
-    select('#status').html('Model Loaded');
+    select('#status').html('Model Loaded! Turn on the audio and use your right hand to change the tone. (You may need to step back a bit.)');
     button.show()
     osc.amp(0);
 }
